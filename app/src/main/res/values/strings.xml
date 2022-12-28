@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Alura Viagens</string>
+    <string name="activity_lista_de_pacotes_titulo_pacotes_especiais_1">Especiais</string>
+    <string name="activity_lista_de_pacotes_subtitulo_pacotes_especiais_1">Brasil</string>
+    <string name="activity_lista_de_pacotes_banner_do_titulo_de_pacotes_especiais">Banner na cor purple</string>
+    <string name="item_pacote_viagens_imagem_description">imagem do pacote de viagens</string>
+</resources>
