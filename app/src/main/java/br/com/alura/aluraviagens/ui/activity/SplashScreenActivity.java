@@ -3,6 +3,7 @@ package br.com.alura.aluraviagens.ui.activity;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
 
@@ -14,7 +15,23 @@ public class SplashScreenActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
-        mostraSplashScreen();
+        verificaSeOAppFoiAberto();
+    }
+
+    private void verificaSeOAppFoiAberto() {
+        SharedPreferences preferences = getSharedPreferences("user_preferences", MODE_PRIVATE);
+        if (preferences.contains("app_foi_aberto")){
+            mostrarTelaInicial();
+        }else{
+            mostraSplashScreen();
+            addPreferenciaAppFoiAberto(preferences);
+        }
+    }
+
+    private void addPreferenciaAppFoiAberto(SharedPreferences preferences) {
+        SharedPreferences.Editor editor = preferences.edit();
+        editor.putBoolean("app_foi_aberto", true);
+        editor.apply();
     }
 
     private void mostraSplashScreen() {
