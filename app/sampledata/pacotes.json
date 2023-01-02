@@ -4,19 +4,22 @@
       "local": "São Paulo",
       "imagem": "@drawable/sao_paulo_sp",
       "dias": "2 dias",
-      "preco": "R$ 243,99"
+      "preco": "R$ 243,99",
+      "data": "08/12 - 10/12 de 2017"
     },
     {
       "local": "Belo Horizonte",
       "imagem": "@drawable/belo_horizonte_mg",
       "dias": "3 dias",
-      "preco": "R$ 421,50"
+      "preco": "R$ 421,50",
+      "data": "08/12 - 11/12 de 2017"
     },
     {
       "local": "Recife",
       "imagem": "@drawable/recife_pe",
       "dias": "4 dias",
-      "preco": "R$ 754,20"
+      "preco": "R$ 754,20",
+      "data": "08/12 - 12/12 de 2017"
     },
     {
       "local": "Rio de Janeiro",
@@ -28,13 +31,15 @@
       "local": "Salvador",
       "imagem": "@drawable/salvador_ba",
       "dias": "5 dias",
-      "preco": "R$ 899,99"
+      "preco": "R$ 899,99",
+      "data": "08/12 - 13/12 de 2017"
     },
     {
       "local": "Foz do Iguaçu",
       "imagem": "@drawable/foz_do_iguacu_pr",
       "dias": "1 dia",
-      "preco": "R$ 289,90"
+      "preco": "R$ 289,90",
+      "data": "08/12 - 09/12 de 2017"
     }
   ]
 }

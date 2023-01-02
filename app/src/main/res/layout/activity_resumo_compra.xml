@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.ResumoCompraActivity">
+
+    <ImageView
+        android:id="@+id/activity_resumo_compra_banner_1"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:contentDescription="@string/activity_resumo_compra_banner_1_contentDescription"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@android:color/holo_orange_dark"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/activity_resumo_compra_str_parabens_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="@string/activity_resumo_compra_str_parabens_1"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/activity_resumo_compra_banner_1"
+        app:layout_constraintStart_toStartOf="@+id/activity_resumo_compra_banner_1"
+        app:layout_constraintTop_toTopOf="@id/activity_resumo_compra_banner_1"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/activity_resumo_compra_str_sucesso_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="@string/activity_resumo_compra_str_sucesso_1"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@id/activity_resumo_compra_banner_1"
+        app:layout_constraintEnd_toEndOf="@id/activity_resumo_compra_banner_1"
+        app:layout_constraintStart_toStartOf="@id/activity_resumo_compra_banner_1"
+        app:layout_constraintTop_toBottomOf="@+id/activity_resumo_compra_str_parabens_1"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/activity_resumo_compra_str_resumo_compra_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_resumo_compra_banner_1"
+        android:text="@string/activity_resumo_compra_str_resumo_compra_1"
+        android:textSize="14sp"
+        android:layout_margin="8dp"
+
+        />
+
+    <ImageView
+        android:id="@+id/activity_resumo_compra_imagem_pacote_1"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/activity_resumo_compra_imagem_pacote_1_contentDescription"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_resumo_compra_str_resumo_compra_1"
+
+
+        tools:src="@sample/pacotes.json/pacotes/imagem" />
+
+    <TextView
+        android:id="@+id/activity_resumo_compra_local_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_resumo_compra_imagem_pacote_1"
+        android:layout_margin="8dp"
+        tools:text="@sample/pacotes.json/pacotes/local"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:textSize="14sp"
+        />
+
+    <TextView
+        android:id="@+id/activity_resumo_compra_data_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/activity_resumo_compra_local_1"
+        app:layout_constraintEnd_toEndOf="@id/activity_resumo_compra_local_1"
+        app:layout_constraintTop_toBottomOf="@id/activity_resumo_compra_local_1"
+        android:textSize="14sp"
+        tools:text="@sample/pacotes.json/pacotes/data"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/activity_resumo_compra_preco_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/activity_resumo_compra_local_1"
+        app:layout_constraintEnd_toEndOf="@+id/activity_resumo_compra_local_1"
+        app:layout_constraintTop_toBottomOf="@id/activity_resumo_compra_data_1"
+        app:layout_constraintHorizontal_bias="0.0"
+        tools:text="@sample/pacotes.json/pacotes/preco"
+        android:layout_marginTop="8dp"
+        android:textSize="14sp"
+        />
+
+
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

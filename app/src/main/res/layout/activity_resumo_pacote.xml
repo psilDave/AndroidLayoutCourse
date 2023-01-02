@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/activity_resumo_pacote_imagem_1"
+        android:layout_width="0dp"
+        android:layout_height="140dp"
+        android:contentDescription="@string/activity_resumo_pacote_content_description"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:src="@sample/pacotes.json/pacotes/imagem" />
+
+    <TextView
+        android:id="@+id/activity_resumo_pacote_localidade_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_resumo_pacote_imagem_1"
+        tools:text="@sample/pacotes.json/pacotes/local" />
+
+    <TextView
+        android:id="@+id/activity_resumo_pacote_quantidade_de_dias_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/activity_resumo_pacote_localidade_1"
+        app:layout_constraintTop_toBottomOf="@+id/activity_resumo_pacote_localidade_1"
+
+        tools:text="@sample/pacotes.json/pacotes/dias" />
+
+    <TextView
+        android:id="@+id/activity_resumo_pacote_data_1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/activity_resumo_pacote_preco_1"
+        app:layout_constraintStart_toStartOf="@+id/activity_resumo_pacote_quantidade_de_dias_1"
+        app:layout_constraintTop_toBottomOf="@+id/activity_resumo_pacote_quantidade_de_dias_1"
+        tools:text="@sample/pacotes.json/pacotes/data" />
+
+    <TextView
+        android:id="@+id/activity_resumo_pacote_preco_1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="textEnd"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/activity_resumo_pacote_data_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@id/activity_resumo_pacote_data_1"
+        tools:text="@sample/pacotes.json/pacotes/preco" />
+
+    <TextView
+        android:id="@+id/activity_resumo_pacote_str_preco_final"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/activity_resumo_preco_preco_final"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/activity_resumo_pacote_preco_1"
+        app:layout_constraintEnd_toEndOf="@+id/activity_resumo_pacote_preco_1" />
+
+    <Button
+        android:id="@+id/activity_resumo_pacote_botao_1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/background_botoes"
+        android:text="@string/activity_resumo_pacote_botao_pagamento_1"
+        android:textColor="@color/white"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="TextContrastCheck" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

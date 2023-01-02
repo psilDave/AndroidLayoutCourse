@@ -12,7 +12,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@color/color_"
+        app:srcCompat="@color/cP"
         android:contentDescription="@string/activity_lista_de_pacotes_banner_do_titulo_de_pacotes_especiais" />
 
     <TextView
